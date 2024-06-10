@@ -1,10 +1,26 @@
 export function MiPrimerComponente( {name, lastName}) {
     return (
       <>
-        que tal, mi nombre es {name} {lastName}
-        <img src="./imgs/noche.webp" alt="" />  
-     
+        <div>
+          que tal, mi nombre es {name} {lastName}
+        </div>
+        
+        <div>
+          <img src="./imgs/noche.webp" alt="" /> 
+        </div>
+        <div className="font-sans">
+          Estoy aprendiendo a usar react
+        </div>
+        <div>
+          .
+          a
+          .
+          b
+          .
+          c
+          .
+         </div>
+        
       </>
-      
     )
   }

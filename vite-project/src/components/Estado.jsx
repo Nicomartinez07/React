@@ -60,7 +60,7 @@ export const Estado = () => {
             <>
               <div className="fondoGrilla">
                 <h2>
-                  Full name {item.name} {item.lastName}
+                  Full name: {item.name} {item.lastName}
                 </h2>
                 <p>Planet: {item.planet} </p>
                 <div className="alineamientoFoto ">

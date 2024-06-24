@@ -1,5 +1,7 @@
-import { Estado } from "./components/estado/Estado";
-import { MiPrimerComponente } from "./components/miPrimerComponente/MiPrimerComponente"
+import { Estado } from "./components/Estado";
+import GetPosts from "./components/GetPosts";
+import { MiPrimerComponente } from "./components/MiPrimerComponente";
+import RickAndMorty from "./components/RickAndMorty";
 
 const MyFunction = () => {
   return <>Hola</>;
@@ -10,13 +12,15 @@ const MyFunction = () => {
 function App() {
   return (
     <div className="fondo">
-    <> 
+      <>
         <MyFunction />
-        <MiPrimerComponente name={'Nicolas'} lastName={'Martinez'} />
+        <MiPrimerComponente name={"Nicolas"} lastName={"Martinez"} />
         <Estado />
-    </>
+        <GetPosts />
+        <RickAndMorty />
+      </>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

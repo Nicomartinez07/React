@@ -2,6 +2,7 @@ import { Estado } from "./components/Estado";
 import GetPosts from "./components/GetPosts";
 import { MiPrimerComponente } from "./components/MiPrimerComponente";
 import RickAndMorty from "./components/RickAndMorty";
+import Convertor from "./components/Convertor.jsx";
 
 const MyFunction = () => {
   return <>Hola</>;
@@ -18,6 +19,7 @@ function App() {
         <Estado />
         <GetPosts />
         <RickAndMorty />
+        <Convertor />
       </>
     </div>
   );

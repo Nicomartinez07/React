@@ -3,6 +3,7 @@ import GetPosts from "./components/GetPosts";
 import { MiPrimerComponente } from "./components/MiPrimerComponente";
 import RickAndMorty from "./components/RickAndMorty";
 import Convertor from "./components/Convertor.jsx";
+import Tarjetita from "./components/Tarjetita.jsx";
 
 const MyFunction = () => {
   return <>Hola</>;
@@ -20,6 +21,7 @@ function App() {
         <GetPosts />
         <RickAndMorty />
         <Convertor />
+        <Tarjetita />
       </>
     </div>
   );

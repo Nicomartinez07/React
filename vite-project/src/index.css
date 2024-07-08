@@ -32,7 +32,7 @@
 /* Tarjetita */
 .card {
   --background: linear-gradient(to right, #74ebd5 0%, #acb6e5 100%);
-  width: 500px;
+  width: 400px;
   height: 254px;
   padding: 5px;
   border-radius: 1rem;

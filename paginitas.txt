@@ -7,3 +7,8 @@ https://colorhunt.co/
 iconos
 https://react-icons.github.io/react-icons/
 
+Seleccionar un color de una imagen 
+https://imagecolorpicker.com/
+
+Quitar fondo de una foto
+https://www.adobe.com/es/express/feature/image/remove-background

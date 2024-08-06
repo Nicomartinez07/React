@@ -37,7 +37,7 @@ export default function GetPosts() {
       {!data.length ? (
         <p>Loading...</p>
       ) : (
-        <div className="grilla">
+        <div className="grillaRickAndMorty">
           {data.map((character, index) => (
             <div
               className="fondoGrilla"

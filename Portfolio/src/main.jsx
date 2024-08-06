@@ -7,7 +7,7 @@ import * as ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 
-import Tarjetita from "./components/Tarjetita.jsx";
+import RickMortyCards from "./components/RickMortyCards.jsx";
 import Convertor from "./components/Convertor.jsx";
 
 //Router
@@ -24,7 +24,7 @@ const router = createBrowserRouter([
     path: "/rickAndMorty",
     element: (
       <div>
-        <Tarjetita />
+        <RickMortyCards />
       </div>
     ),
   },

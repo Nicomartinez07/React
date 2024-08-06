@@ -44,7 +44,8 @@ nav ul li a {
 section {
   padding: 2rem;
 }
-
+/* ---------------------------------------------------------------------------- */
+/* Grilla de proyectos */
 .projects-grid {
   display: flex;
   justify-content: center;
@@ -61,18 +62,28 @@ section {
   color: black;
 }
 
+/* ---------------------------------------------------------------------------- */
 a {
   color: var(--link-color);
 }
 
+.fotito {
+  max-width: 270px;
+}
+
+/* ---------------------------------------------------------------------------- */
 /* Button.css */
 .color-button {
-  background-color: grey;
+  background-color: var(--header-footer-bg-color--bg-color);
   color: var(--text-color);
   border: none;
   padding: 10px 20px;
   cursor: pointer;
   transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.color-button:hover {
+  font-size: 115%;
 }
 
 .animated-button {
@@ -85,15 +96,12 @@ a {
 
 .animated-button:hover {
   transform: scale(1.1);
+  font-size: 115%;
   background-color: grey;
   color: black;
 }
 
-.fotito {
-  max-width: 300px;
-}
-
-
+/* ---------------------------------------------------------------------------- */
 /* Rick and morty */
 .flex {
   display: flex;
@@ -113,4 +121,3 @@ a {
   align-items: center;
   max-width: 300px;
 }
-

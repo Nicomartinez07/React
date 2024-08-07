@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import "./App.css";
 import { IoIosMail } from "react-icons/io";
 import { FaWhatsapp, FaGithub, FaDiscord } from "react-icons/fa";
 import { CiDark } from "react-icons/ci";
@@ -82,13 +81,13 @@ const App = () => {
   return (
     <div className="App">
       <header>
-        <h1>Hey! I'm Nicolas Martinez</h1>
+        <h1>Nico</h1>
         <button className="color-button " onClick={changeTheme}>
         <CiDark />
         </button>
       </header>
       <section id="about">
-        <h2>About Me</h2>
+        <h2>Hey! I'm Nicolas Martinez</h2>
         <p>
           I am an Tics student at the Escuela Tecnica UBA in Lugano. 
           Here you will find some of my most recent projects.

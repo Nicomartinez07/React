@@ -10,7 +10,7 @@ const Projects = () => {
     {
       title: "Pokemons",
       description: "Pokemon cards",
-      link: "#",
+      link: "/pokemones/index.html",
       img: "/image.png",
     },
     {
@@ -48,23 +48,39 @@ const Projects = () => {
 /* ---------------------------------------------------------------------------- */
 
 const App = () => {
-
-
   /* ---------------------------------------------------------------------------- */
   /* Tema de la pagina */
-  const [theme, setTheme] = useState({ bgColor: "#31363F", ltColor: "#FFFFFF" });
+  const [theme, setTheme] = useState({
+    bgColor: "#31363F",
+    ltColor: "#FFFFFF",
+  });
 
   useEffect(() => {
-    document.documentElement.style.setProperty('--bg-color', theme.bgColor);
-    document.documentElement.style.setProperty('--text-color', theme.ltColor);
-    document.documentElement.style.setProperty('--link-color', theme.ltColor === "#FFFFFF" ? "black" : "white");
+    document.documentElement.style.setProperty("--bg-color", theme.bgColor);
+    document.documentElement.style.setProperty("--text-color", theme.ltColor);
+    document.documentElement.style.setProperty(
+      "--link-color",
+      theme.ltColor === "#FFFFFF" ? "black" : "white"
+    );
 
     if (theme.bgColor === "#FFFFFF") {
-      document.documentElement.style.setProperty('--header-footer-bg-color', "#FEFAE0");
-      document.documentElement.style.setProperty('--header-footer-text-color', "#2f333a");
+      document.documentElement.style.setProperty(
+        "--header-footer-bg-color",
+        "#FEFAE0"
+      );
+      document.documentElement.style.setProperty(
+        "--header-footer-text-color",
+        "#2f333a"
+      );
     } else {
-      document.documentElement.style.setProperty('--header-footer-bg-color', "#31363F");
-      document.documentElement.style.setProperty('--header-footer-text-color', "#FFFFFF");
+      document.documentElement.style.setProperty(
+        "--header-footer-bg-color",
+        "#31363F"
+      );
+      document.documentElement.style.setProperty(
+        "--header-footer-text-color",
+        "#FFFFFF"
+      );
     }
   }, [theme]);
 
@@ -81,16 +97,19 @@ const App = () => {
   return (
     <div className="App">
       <header>
-        <h1>Nico</h1>
-        <button className="color-button " onClick={changeTheme}>
-        <CiDark />
+        <div></div>
+        <div className="nico">
+          <h1> My portfolio</h1>
+        </div>
+        <button className="color-button" onClick={changeTheme}>
+          <CiDark />
         </button>
       </header>
       <section id="about">
         <h2>Hey! I'm Nicolas Martinez</h2>
         <p>
-          I am an Tics student at the Escuela Tecnica UBA in Lugano. 
-          Here you will find some of my most recent projects.
+          I am an Tics student at the Escuela Tecnica UBA in Lugano. Here you
+          will find some of my most recent projects.
         </p>
       </section>
       <Projects />

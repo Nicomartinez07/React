@@ -1,0 +1,138 @@
+/* Pokemones--------------------------------------------------------------------- */
+
+/* Ejercicio 1*/
+
+.flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Ejercicio 2 / 4 */
+
+.grilla {
+  display: grid;
+
+  /* Ejercicio 2 */
+  /*grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(3, 300px);*/
+
+  /* Ejercicio 5  */
+  /*grid-template-columns: 210px 230px 250px;
+    grid-template-rows: 311px 331px 351px;*/
+
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-auto-rows: auto;
+  gap: 20px;
+}
+
+/* Ejercicio 3*/
+
+.space-evenly {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.aling {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.space {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ejercicio 6 */
+
+.fondoPagina {
+  background-image: url("./pokemones-fotos/parque.jpg");
+  background-size: cover;
+}
+
+.centrado {
+  text-align: center;
+}
+
+.fotoDinamica {
+  width: 95%;
+  aspect-ratio: 1 / 1; /* Puede ser opcional --> le da estructura a las fotos  */
+  /* si es widescreen o si es tipo retrato */
+  object-fit: cover;
+  border-radius: 30px;
+  transition: transform 0.5s ease;
+  cursor: pointer;
+}
+
+.fotoDinamica:hover {
+  transform: scale(1.1);
+}
+
+#visibleUno {
+  z-index: 10;
+}
+#ocultaUno {
+  z-index: -10;
+}
+
+.alineamientoFoto {
+  display: flex;
+  flex-direction: column; /*La direccion en la que va a estar el contendio */
+  align-items: center; /* Alinea el contenido al centro*/
+}
+
+/* Pokemones */
+
+.pikachu {
+  background-color: rgb(243, 170, 12);
+  border: 10px solid rgb(243, 170, 12);
+  border-radius: 30px;
+}
+
+.snorlax {
+  background-color: rgb(12, 243, 224);
+  border: 10px solid rgb(12, 243, 224);
+  border-radius: 30px;
+}
+
+.eevee {
+  background-color: rgb(243, 134, 45);
+  border: 10px solid rgb(243, 134, 45);
+  border-radius: 30px;
+}
+
+.charmander {
+  background-color: rgb(245, 158, 45);
+  border: 10px solid rgb(245, 158, 45);
+  border-radius: 30px;
+}
+
+.cresselia {
+  background-color: rgb(240, 133, 178);
+  border: 10px solid rgb(240, 133, 178);
+  border-radius: 30px;
+}
+
+.lapras {
+  background-color: rgb(12, 208, 243);
+  border: 10px solid rgb(12, 208, 243);
+  border-radius: 30px;
+}
+
+.sylveon {
+  background-color: rgb(245, 185, 240);
+  border: 10px solid rgb(245, 185, 240);
+  border-radius: 30px;
+}
+
+.butterfree {
+  background-color: rgb(228, 127, 248);
+  border: 10px solid rgb(228, 127, 248);
+  border-radius: 30px;
+}
+
+.oshawott {
+  background-color: rgb(90, 156, 255);
+  border: 10px solid rgb(90, 156, 255);
+  border-radius: 30px;
+}

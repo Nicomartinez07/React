@@ -16,13 +16,13 @@ const Projects = () => {
     {
       title: "Rick And Morty",
       description: "Rick and Morty cards",
-      link: "/RickAndMorty",
+      link: "/rickAndMorty",
       img: "/rick.png",
     },
     {
       title: "Convertor",
       description: "Currency convertor",
-      link: "/Convertor",
+      link: "/convertor",
       img: "/conversor.png",
     },
   ];
